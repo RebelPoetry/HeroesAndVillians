@@ -1,0 +1,92 @@
+PODS:
+  - Alamofire (5.6.2)
+  - Codex (0.2.2)
+  - incetro-generic-cell-presenters (1.0.0)
+  - incetro-http-transport (5.2.2):
+    - Alamofire (~> 5)
+  - Kingfisher (7.4.1)
+  - Monreau (2.1.4):
+    - Realm
+    - RealmSwift
+  - Realm (10.7.7):
+    - Realm/Headers (= 10.7.7)
+  - Realm/Headers (10.7.7)
+  - RealmSwift (10.7.7):
+    - Realm (= 10.7.7)
+  - SDAO (2.5.3):
+    - Monreau
+    - Realm
+    - RealmSwift
+  - service-core (0.0.1):
+    - Codex
+    - incetro-http-transport
+  - Swinject (2.8.2)
+  - TransitionHandler (0.0.4)
+  - VIPER (1.2.2):
+    - TransitionHandler
+
+DEPENDENCIES:
+  - incetro-generic-cell-presenters
+  - Kingfisher (~> 7.0)
+  - Monreau (from `https://github.com/Incetro/Monreau`)
+  - Realm (~> 10.7.5)
+  - RealmSwift (~> 10.7.5)
+  - SDAO (from `https://github.com/Incetro/DAO`)
+  - service-core (from `https://github.com/Incetro/service-core`)
+  - Swinject
+  - VIPER (from `https://github.com/Incetro/VIPER`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Codex
+    - incetro-generic-cell-presenters
+    - incetro-http-transport
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - Swinject
+    - TransitionHandler
+
+EXTERNAL SOURCES:
+  Monreau:
+    :git: https://github.com/Incetro/Monreau
+  SDAO:
+    :git: https://github.com/Incetro/DAO
+  service-core:
+    :git: https://github.com/Incetro/service-core
+  VIPER:
+    :git: https://github.com/Incetro/VIPER
+
+CHECKOUT OPTIONS:
+  Monreau:
+    :commit: ad0dfb6e7c0f646b3f5e95a3876d56b9b65ef708
+    :git: https://github.com/Incetro/Monreau
+  SDAO:
+    :commit: 3f6cde8ca2a6c44fd355ff280948e64709f1c990
+    :git: https://github.com/Incetro/DAO
+  service-core:
+    :commit: f122e2efe9c7cbbe88bbb871dd658d991e8efaac
+    :git: https://github.com/Incetro/service-core
+  VIPER:
+    :commit: 17b1176d281e584985aa301b014cd63476f5e763
+    :git: https://github.com/Incetro/VIPER
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Codex: 59ad88217f3c0e4cb2e011cb8527bab749887dda
+  incetro-generic-cell-presenters: 9756c65a7c4ab8695b0b7f3d856b2d34ecaf74e4
+  incetro-http-transport: 66dfc5812b6c2000d623d019822c51fdaf6db0b7
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
+  Monreau: 1fce7f19135129366dabc0833a463ff5ac08580c
+  Realm: 8010af8b7a576ba501729bcbc54a3cd1f1f7dca3
+  RealmSwift: dc17e6d649c12a8996f9e962c3fe6cef356885c4
+  SDAO: e1945854c9616a80703495b01b9ae2fa3046f238
+  service-core: 8e5dd92461d9eb53a760112ca302dae0870e643b
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+  TransitionHandler: 5397b86166297ca491c94f306396117ce4341a80
+  VIPER: bae091d47c951a423e82dc57a35b314ab05bbf4f
+
+PODFILE CHECKSUM: 7cdc40cd959930ecb6c634207bb2206aa7adffbe
+
+COCOAPODS: 1.11.3
