@@ -9,6 +9,7 @@ import Foundation
 import SDAO
 
 // MARK: - SuperhumanPlainObject
+
 public struct SuperhumanPlainObject: Decodable, Plain {
     
     // MARK: - Properties
@@ -19,17 +20,17 @@ public struct SuperhumanPlainObject: Decodable, Plain {
     }
     
     /// Superhuman's name
-    let name: String
+    public let name: String
     
     /// Superhuman's type: superhero, supervillains, etc.
-    let type: String
+    public let type: String
     
     /// URL of image with superhuman
-    let imageURL: URL
+    public let imageURL: URL
     
     /// Background color of superhuman's card
-    let backgroundColorHex: String
+    public let backgroundColorHex: String
     
     /// Superhuman stats instance
-    let stats: [SuperhumanStatPlainObject]
+    public let stats: [SuperhumanStatPlainObject]
 }

@@ -20,12 +20,7 @@ final public class SuperhumanCell: UITableViewCell {
     private let infoContainerView = UIView()
     
     /// Favorite button instance
-    private let favoriteButton: UIView = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "unfilledStar") , for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
+    private let favoriteButton = UIButton()
     
     /// Header instance
     private let headerLabel: UILabel =  {
@@ -50,7 +45,6 @@ final public class SuperhumanCell: UITableViewCell {
         return image
     }()
     
-    
     // MARK: - UITableViewCell
     
     override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -58,6 +52,7 @@ final public class SuperhumanCell: UITableViewCell {
         setupLayout()
         design()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -67,15 +62,17 @@ final public class SuperhumanCell: UITableViewCell {
     func setupStats(with stats: [SuperhumanStatPlainObject]) {
         if statsStackView.subviews.isEmpty {
             for stat in stats {
-                let statView = StatViewString()
+                let statView = StatView()
                 statView.setupText(statValue: stat.value, statName: stat.shortName)
                 statsStackView.addArrangedSubview(statView)
             }
         }
     }
+    
     func setup(with viewModel: SuperhumanCellViewModelProtocol) {
         headerLabel.text = viewModel.name
         setupStats(with: viewModel.stats)
+        favoriteButton.setImage(UIImage(named: "unfilledStar") , for: .normal)
         cellImage.kf.setImage(with: viewModel.imageURL)
         infoContainerView.backgroundColor = UIColor(hex: viewModel.backgroundColorHex)
     }
@@ -98,6 +95,7 @@ public extension SuperhumanCell {
         setupHeaderLabel()
         setupImageView()
     }
+    
     private func setupContainerView() {
         containerView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(containerView)
@@ -106,6 +104,7 @@ public extension SuperhumanCell {
         containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: LayoutConstants.containerViewBottomPadding).isActive = true
         containerView.heightAnchor.constraint(equalToConstant: LayoutConstants.containerViewHeight).isActive = true
     }
+    
     private func setupInfoContainerView() {
         infoContainerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(infoContainerView)
@@ -114,6 +113,7 @@ public extension SuperhumanCell {
         infoContainerView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
         infoContainerView.heightAnchor.constraint(equalToConstant: LayoutConstants.infoContainerViewHeight).isActive = true
     }
+    
     private func setupFavoriteButton() {
         favoriteButton.translatesAutoresizingMaskIntoConstraints = false
         infoContainerView.addSubview(favoriteButton)
@@ -121,18 +121,21 @@ public extension SuperhumanCell {
         favoriteButton.topAnchor.constraint(equalTo: infoContainerView.topAnchor, constant: LayoutConstants.favoriteButtonTopPadding).isActive = true
         favoriteButton.heightAnchor.constraint(equalToConstant: LayoutConstants.favoriteButtonHeight).isActive = true
     }
+    
     private func setupStatsStackView() {
         statsStackView.translatesAutoresizingMaskIntoConstraints = false
         infoContainerView.addSubview(statsStackView)
         statsStackView.bottomAnchor.constraint(equalTo: infoContainerView.bottomAnchor, constant: LayoutConstants.statsStackViewBottomPadding).isActive = true
         statsStackView.leftAnchor.constraint(equalTo: infoContainerView.leftAnchor, constant: LayoutConstants.statsStackViewLeftPadding).isActive = true
     }
+    
     private func setupHeaderLabel() {
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
         infoContainerView.addSubview(headerLabel)
         headerLabel.leftAnchor.constraint(equalTo: favoriteButton.rightAnchor, constant: LayoutConstants.headerLabelLeftPadding).isActive = true
         headerLabel.topAnchor.constraint(equalTo: infoContainerView.topAnchor, constant: LayoutConstants.headerLabelTopPadding).isActive = true
     }
+    
     private func setupImageView() {
         cellImage.translatesAutoresizingMaskIntoConstraints = false
         infoContainerView.addSubview(cellImage)

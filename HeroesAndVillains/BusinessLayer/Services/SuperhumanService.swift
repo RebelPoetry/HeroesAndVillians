@@ -9,6 +9,7 @@ import Foundation
 import ServiceCore
 
 // MARK: - SuperhumanService
+
 public protocol SuperhumanService {
     
     /// Obtain all superhumans

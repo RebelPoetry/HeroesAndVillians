@@ -26,7 +26,6 @@ final public class SuperhumanInteractor {
     /// - Parameters:
     ///    - superhumanService: service instance
     ///    - superhumanPresenter: presenter instance
-    ///    
     public init(superhumanService: SuperhumanService, superhumanPresenter: SuperhumanInteractorOutput) {
         self.superhumanService = superhumanService
         self.output = superhumanPresenter

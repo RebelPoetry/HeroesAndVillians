@@ -9,6 +9,7 @@
 import Foundation
 
 // MARK: - Data
+
 extension Data {
 
     /// Decode this data into a value, optionally using a specific decoder.

@@ -49,7 +49,7 @@ final public class SuperhumanPresenter {
 extension SuperhumanPresenter: SuperhumanViewOutput {
     
     public func didTriggerSelectSuperhumanEvent(_ superhuman: SuperhumanPlainObject) {
-        //
+        // Conforming to protocol
     }
 
     public func didTriggerViewReadyEvent() {

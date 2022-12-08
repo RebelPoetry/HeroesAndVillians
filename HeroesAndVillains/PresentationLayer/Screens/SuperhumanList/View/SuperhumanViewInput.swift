@@ -5,7 +5,6 @@
 //  Created by Kazakh on 24.11.2022.
 //
 
-
 import Foundation
 
 // MARK: - SuperhumanViewInput
@@ -21,6 +20,6 @@ public protocol SuperhumanViewInput: AnyObject {
     func update(_ viewModels: [SuperhumanCellViewModelProtocol])
 
     /// Select some superhuman
-    /// - Parameter superhumanName: some superhuman's name
-    func selectSuperhuman(_ superhumanName: String)
+    /// - Parameter superhuman: some superhuman
+    func selectSuperhuman(_ superhuman: SuperhumanPlainObject)
 }

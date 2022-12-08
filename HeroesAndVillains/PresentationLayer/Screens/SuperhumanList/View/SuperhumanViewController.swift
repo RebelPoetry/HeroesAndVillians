@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - SuperhumanViewController
 
-final class SuperhumanViewController: UIViewController {
+public final class SuperhumanViewController: UIViewController {
     
     /// Presenter instance
     var output: SuperhumanViewOutput?
@@ -18,7 +18,7 @@ final class SuperhumanViewController: UIViewController {
     /// Superhuman content manager
     var contentManager: SuperhumanContentManager?
     
-    /// List name instance
+    /// Name label of superhumans list
     private let listNameLabel: UILabel = {
         
         let name = UILabel()
@@ -28,7 +28,7 @@ final class SuperhumanViewController: UIViewController {
         return name
     }()
     
-    /// Favorite button instance
+    /// Favorite button which on/off favorite superhumans filter
     private let favoriteButton: UIView = {
         
         let button = UIButton()
@@ -36,7 +36,7 @@ final class SuperhumanViewController: UIViewController {
         return button
     }()
     
-    /// Table view with superhuman cells
+    /// Table view with superhuman cards
     private var tableView: UITableView = {
         
         let tableView = UITableView()
@@ -94,8 +94,8 @@ extension SuperhumanViewController: SuperhumanViewInput {
         contentManager?.updateData(viewModels)
     }
     
-    public func selectSuperhuman(_ code: String) {
-        //
+    public func selectSuperhuman(_ superhuman: SuperhumanPlainObject) {
+        // Conforming to protocol
     }
 }
 
@@ -110,12 +110,14 @@ extension SuperhumanViewController {
         tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: LayoutConstants.tableViewTopPadding).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
+    
     private func setListNameLabel() {
         listNameLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(listNameLabel)
         listNameLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         listNameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: LayoutConstants.listNameLableTopPadding).isActive = true
     }
+    
     private func setFavoriteButton() {
         favoriteButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(favoriteButton)

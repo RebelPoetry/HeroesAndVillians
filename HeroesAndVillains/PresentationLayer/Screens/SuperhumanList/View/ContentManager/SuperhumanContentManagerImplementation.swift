@@ -12,7 +12,7 @@ import VIPER
 
 // MARK: - SuperhumanContentManagerImplementation
 
-final class SuperhumanContentManagerImplementation: IntermediateContentManager<UITableView> {
+public final class SuperhumanContentManagerImplementation: IntermediateContentManager<UITableView> {
 
     // MARK: - Properties
 
@@ -49,9 +49,7 @@ extension SuperhumanContentManagerImplementation: SuperhumanContentManager {
     }
     
     public func updateData(_ viewModels: [SuperhumanCellViewModelProtocol]) {
-        guard let tableView = contentView else {
-            return
-        }
+        guard let tableView = contentView else { return }
         controllers = controllersFactory.controllers(with: viewModels, tableView: tableView)
         tableView.reloadData()
     }

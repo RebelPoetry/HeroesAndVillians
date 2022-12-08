@@ -15,7 +15,4 @@ public final class SuperhumanRouter {
 // MARK: - SuperhumanListRouterInput
 
 extension SuperhumanRouter: SuperhumanRouterInput {
-    
-    public func close() {
-    }
 }

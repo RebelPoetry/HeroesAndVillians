@@ -10,7 +10,4 @@ import Foundation
 // MARK: - SuperhumanRouterInput
 
 public protocol SuperhumanRouterInput: AnyObject {
-
-    /// Close current module
-    func close()
 }

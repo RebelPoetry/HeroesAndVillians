@@ -8,24 +8,15 @@
 import Foundation
 import UIKit
 
-// MARK: - StatViewString
+// MARK: - StatView
 
-final class StatViewString: UIView {
+final class StatView: UIView {
     
     // Label with superhuman's stat value
-    private let statValueLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-        label.textAlignment = .right
-        return label
-    }()
+    private let statValueLabel = UILabel()
     
     // Label with superhuman's stat name
-    private let statNameLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-        return label
-    }()
+    private let statNameLabel = UILabel()
     
     init() {
         super.init(frame: .zero)
@@ -44,14 +35,15 @@ final class StatViewString: UIView {
     }
 }
 
-// MARK: - StatViewString
+// MARK: - StatView
 
-extension StatViewString {
+extension StatView {
     
     private func setupLayout() {
         setupStatValueLabel()
         setupStatNameLabel()
     }
+    
     private func setupStatValueLabel() {
         statValueLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(statValueLabel)
@@ -59,6 +51,7 @@ extension StatViewString {
         statValueLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         statValueLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
+    
     private func setupStatNameLabel() {
         statNameLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(statNameLabel)
@@ -70,17 +63,20 @@ extension StatViewString {
 
 // MARK: - Design
 
-extension StatViewString {
+extension StatView {
     
     private func design() {
+        statValueLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         statValueLabel.textColor = .white
+        statValueLabel.textAlignment = .right
+        statNameLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         statNameLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.38)
     }
 }
 
 // MARK: - Constans
 
-extension StatViewString {
+extension StatView {
     
     enum LayoutConstants {
         static let betweenStatSpacing: CGFloat = 32

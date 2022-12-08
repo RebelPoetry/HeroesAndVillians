@@ -12,6 +12,6 @@ import VIPER
 public protocol SuperhumanInteractorOutput: InteractorOutput {
 
     /// Superhumans was successfully obtained
-    /// - Parameter codes: obtained superhumans
-    func obtainSuperhumansSuccess(_ codes: [SuperhumanPlainObject])
+    /// - Parameter superhumans: obtained superhumans
+    func obtainSuperhumansSuccess(_ superhumans: [SuperhumanPlainObject])
 }

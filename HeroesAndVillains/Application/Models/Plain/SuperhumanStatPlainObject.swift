@@ -10,6 +10,7 @@ import Foundation
 import SDAO
 
 // MARK: - SuperhumanStatPlainObject
+
 public struct SuperhumanStatPlainObject: Decodable, Plain {
     
     // MARK: - Properties
@@ -19,12 +20,12 @@ public struct SuperhumanStatPlainObject: Decodable, Plain {
         UniqueID(rawValue: longName + String(value))
     }
     
-    /// Stat's long name (example: "speed")
-    let longName: String
+    /// Stat's long name
+    public let longName: String
     
-    /// Stat's short name (example: "spd")
-    let shortName: String
+    /// Stat's short name
+    public let shortName: String
     
     /// Integer stat's value
-    let value: Int
+    public let value: Int
 }

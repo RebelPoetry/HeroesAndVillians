@@ -16,7 +16,7 @@ public protocol SuperhumanCellViewModelProtocol {
     /// Superhuman's name
     var name: String { get }
     
-    /// Flag, that indicates is this superhuman in favorite list
+    /// Flag that indicates is this superhuman in favorite list
     var isFavorite: Bool { get set }
     
     /// Superhuman stats instance
