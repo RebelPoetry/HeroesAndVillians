@@ -23,11 +23,7 @@ final public class SuperhumanCell: UITableViewCell {
     private let favoriteButton = UIButton()
     
     /// Header instance
-    private let headerLabel: UILabel =  {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
-        return label
-    }()
+    private let headerLabel = UILabel()
     
     /// Stack with superhuman's stats
     private let statsStackView: UIStackView =  {
@@ -152,6 +148,7 @@ extension SuperhumanCell {
     
     private func design() {
         headerLabel.textColor = .white
+        headerLabel.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
         backgroundColor = .clear
         contentView.backgroundColor = .clear
     }

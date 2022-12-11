@@ -19,14 +19,7 @@ public final class SuperhumanViewController: UIViewController {
     var contentManager: SuperhumanContentManager?
     
     /// Name label of superhumans list
-    private let listNameLabel: UILabel = {
-        
-        let name = UILabel()
-        name.text = "Superheroes"
-        name.textColor = .white
-        name.font = .systemFont(ofSize: 32, weight: .bold)
-        return name
-    }()
+    private let listNameLabel = UILabel()
     
     /// Favorite button which on/off favorite superhumans filter
     private let favoriteButton: UIView = {
@@ -37,12 +30,7 @@ public final class SuperhumanViewController: UIViewController {
     }()
     
     /// Table view with superhuman cards
-    private var tableView: UITableView = {
-        
-        let tableView = UITableView()
-        tableView.contentInset = LayoutConstants.contentInsets
-        return tableView
-    }()
+    private var tableView = UITableView()
 
     // MARK: - ViewController
     
@@ -54,9 +42,9 @@ public final class SuperhumanViewController: UIViewController {
             superhumanViewInput: self
         )
         design()
+        localize()
         output?.didTriggerViewReadyEvent()
     }
-    
 }
 
 // MARK: - Layout
@@ -71,11 +59,22 @@ extension SuperhumanViewController {
     }
 }
 
+// MARK: - Localizable
+
+public extension SuperhumanViewController {
+    
+    func localize() {
+        listNameLabel.text = "Superheroes"
+    }
+}
+
 // MARK: - Design
 
 extension SuperhumanViewController {
     
     private func design() {
+        listNameLabel.textColor = .white
+        listNameLabel.font = .systemFont(ofSize: 32, weight: .bold)
         tableView.backgroundColor = .black
         setListNameLabel()
         setFavoriteButton()
@@ -105,6 +104,7 @@ extension SuperhumanViewController {
     
     private func layoutTable() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.contentInset = LayoutConstants.contentInsets
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: LayoutConstants.tableViewLeftPadding).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: LayoutConstants.tableViewRightPadding).isActive = true
         tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: LayoutConstants.tableViewTopPadding).isActive = true
