@@ -76,8 +76,6 @@ extension SuperhumanViewController {
         listNameLabel.textColor = .white
         listNameLabel.font = .systemFont(ofSize: 32, weight: .bold)
         tableView.backgroundColor = .black
-        setListNameLabel()
-        setFavoriteButton()
     }
 }
 
@@ -87,6 +85,8 @@ extension SuperhumanViewController: SuperhumanViewInput {
     
     public func setupInitialState() {
         setupTableView()
+        setListNameLabel()
+        setFavoriteButton()
     }
     
     public func update(_ viewModels: [SuperhumanCellViewModelProtocol]) {
@@ -95,6 +95,13 @@ extension SuperhumanViewController: SuperhumanViewInput {
     
     public func selectSuperhuman(_ superhuman: SuperhumanPlainObject) {
         // Conforming to protocol
+    }
+    
+    public func showErrorMessage(_ message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

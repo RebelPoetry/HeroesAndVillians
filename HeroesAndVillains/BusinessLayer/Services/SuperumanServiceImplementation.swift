@@ -20,7 +20,7 @@ extension SuperumanServiceImplementation: SuperhumanService {
     public func obtain() -> ServiceCall<[SuperhumanPlainObject]> {
         createCall {
             guard let fileUrl = Bundle.main.url(forResource: "SuperhumansInfo", withExtension: "json") else {
-                return .failure([] as! Error)
+                return .failure(NSError(domain: "Data not found", code: 666))
             }
             let data = try Data(contentsOf: fileUrl)
             let plains = try data.jsonDecoded() as [SuperhumanPlainObject]

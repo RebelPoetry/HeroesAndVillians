@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C0094FD029239CFE00D479AF /* SuperhumanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0094FCF29239CFE00D479AF /* SuperhumanService.swift */; };
+		C00C19132950F76B003BA954 /* SuperhumansInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = C00C19122950F76B003BA954 /* SuperhumansInfo.json */; };
 		C041AC5928EC8A500065C85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041AC5828EC8A500065C85C /* AppDelegate.swift */; };
 		C041AC5B28EC8A500065C85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041AC5A28EC8A500065C85C /* SceneDelegate.swift */; };
 		C041AC6228EC8A510065C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041AC6128EC8A510065C85C /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		C0B6A9F22923A98300473B47 /* SuperhumanPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F12923A98300473B47 /* SuperhumanPlainObject.swift */; };
 		C0B6A9F42923AAA900473B47 /* SuperumanServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F32923AAA900473B47 /* SuperumanServiceImplementation.swift */; };
 		C0B6A9F82923AB0E00473B47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F72923AB0E00473B47 /* Data.swift */; };
-		C0B6A9FB2923D9A400473B47 /* SuperhumansInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = C0B6A9FA2923D9A400473B47 /* SuperhumansInfo.json */; };
 		C0B6AA03292577D700473B47 /* SuperhumanCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA02292577D700473B47 /* SuperhumanCellViewModelProtocol.swift */; };
 		C0B6AA052925810600473B47 /* SuperhumanCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA042925810600473B47 /* SuperhumanCellViewModel.swift */; };
 		C0B6AA072925EBC800473B47 /* SuperhumanCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA062925EBC800473B47 /* SuperhumanCellController.swift */; };
@@ -49,6 +49,7 @@
 		153B61BF66DCCF5E1F432887 /* Pods-HeroesAndVillains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesAndVillains.release.xcconfig"; path = "Target Support Files/Pods-HeroesAndVillains/Pods-HeroesAndVillains.release.xcconfig"; sourceTree = "<group>"; };
 		5FDC6CF4A6900857488551CA /* Pods-HeroesAndVillains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroesAndVillains.debug.xcconfig"; path = "Target Support Files/Pods-HeroesAndVillains/Pods-HeroesAndVillains.debug.xcconfig"; sourceTree = "<group>"; };
 		C0094FCF29239CFE00D479AF /* SuperhumanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanService.swift; sourceTree = "<group>"; };
+		C00C19122950F76B003BA954 /* SuperhumansInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperhumansInfo.json; sourceTree = "<group>"; };
 		C041AC5528EC8A500065C85C /* HeroesAndVillains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesAndVillains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C041AC5828EC8A500065C85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C041AC5A28EC8A500065C85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		C0B6A9F12923A98300473B47 /* SuperhumanPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanPlainObject.swift; sourceTree = "<group>"; };
 		C0B6A9F32923AAA900473B47 /* SuperumanServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperumanServiceImplementation.swift; sourceTree = "<group>"; };
 		C0B6A9F72923AB0E00473B47 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		C0B6A9FA2923D9A400473B47 /* SuperhumansInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperhumansInfo.json; sourceTree = "<group>"; };
 		C0B6AA02292577D700473B47 /* SuperhumanCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		C0B6AA042925810600473B47 /* SuperhumanCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellViewModel.swift; sourceTree = "<group>"; };
 		C0B6AA062925EBC800473B47 /* SuperhumanCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellController.swift; sourceTree = "<group>"; };
@@ -225,6 +225,7 @@
 		C0B6A9F52923AAFB00473B47 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C062CDAA28F2E9E700217E8B /* SuperhumanCell.swift */,
 				C0B6A9F62923AB0500473B47 /* Extensions */,
 			);
 			path = Common;
@@ -243,7 +244,7 @@
 		C0B6A9F92923D97C00473B47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C0B6A9FA2923D9A400473B47 /* SuperhumansInfo.json */,
+				C00C19122950F76B003BA954 /* SuperhumansInfo.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -330,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				C0B6AA342930A2D500473B47 /* SuperhumanCellAppereance.swift */,
-				C062CDAA28F2E9E700217E8B /* SuperhumanCell.swift */,
 				C08F53B829127AE700A2F750 /* StatView.swift */,
 				C0B6AA2D292F615E00473B47 /* SuperhumanCellViewModel */,
 			);
@@ -415,7 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C041AC6528EC8A510065C85C /* LaunchScreen.storyboard in Resources */,
-				C0B6A9FB2923D9A400473B47 /* SuperhumansInfo.json in Resources */,
+				C00C19132950F76B003BA954 /* SuperhumansInfo.json in Resources */,
 				C041AC6228EC8A510065C85C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

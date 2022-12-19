@@ -63,6 +63,7 @@ extension SuperhumanPresenter: SuperhumanViewOutput {
 extension SuperhumanPresenter: SuperhumanInteractorOutput {
 
     public func processErrorMessage(_ errorMessage: String) {
+        view?.showErrorMessage(errorMessage)
     }
 
     public func obtainSuperhumansSuccess(_ codes: [SuperhumanPlainObject]) {

@@ -58,8 +58,7 @@ final public class SuperhumanCell: UITableViewCell {
     func setupStats(with stats: [SuperhumanStatPlainObject]) {
         if statsStackView.subviews.isEmpty {
             for stat in stats {
-                let statView = StatView()
-                statView.setupText(statValue: stat.value, statName: stat.shortName)
+                let statView = StatView(value: stat.value, name: stat.shortName)
                 statsStackView.addArrangedSubview(statView)
             }
         }

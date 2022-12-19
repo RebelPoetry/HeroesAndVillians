@@ -22,4 +22,7 @@ public protocol SuperhumanViewInput: AnyObject {
     /// Select some superhuman
     /// - Parameter superhuman: some superhuman
     func selectSuperhuman(_ superhuman: SuperhumanPlainObject)
+    
+    /// Shows alert with error message
+    func showErrorMessage(_ message: String)
 }

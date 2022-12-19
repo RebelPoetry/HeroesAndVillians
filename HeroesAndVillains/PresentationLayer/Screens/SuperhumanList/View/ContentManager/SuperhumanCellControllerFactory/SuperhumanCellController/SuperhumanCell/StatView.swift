@@ -13,12 +13,19 @@ import UIKit
 final class StatView: UIView {
     
     // Label with superhuman's stat value
-    private let statValueLabel = UILabel()
+    private let statValueLabel: UILabel = {
+        
+        let value = UILabel()
+        value.textAlignment = .right
+        return value
+    }()
     
     // Label with superhuman's stat name
     private let statNameLabel = UILabel()
     
-    init() {
+    init(value: Int, name: String) {
+        self.statValueLabel.text = String(value)
+        self.statNameLabel.text = name
         super.init(frame: .zero)
         setupLayout()
         design()
@@ -68,7 +75,6 @@ extension StatView {
     private func design() {
         statValueLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         statValueLabel.textColor = .white
-        statValueLabel.textAlignment = .right
         statNameLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         statNameLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.38)
     }
