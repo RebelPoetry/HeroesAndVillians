@@ -14,7 +14,6 @@ final class StatView: UIView {
     
     // Label with superhuman's stat value
     private let statValueLabel: UILabel = {
-        
         let value = UILabel()
         value.textAlignment = .right
         return value

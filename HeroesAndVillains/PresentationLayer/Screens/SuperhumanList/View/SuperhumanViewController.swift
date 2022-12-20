@@ -99,9 +99,9 @@ extension SuperhumanViewController: SuperhumanViewInput {
     
     public func showErrorMessage(_ message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default)
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
 }
 
