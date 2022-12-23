@@ -20,11 +20,14 @@ final public class SuperhumanPresenter {
     /// View instance
     weak var view: SuperhumanViewInput?
 
+    /// Superhuman content manager
+    private var contentManager: SuperhumanContentManager?
+    
     /// SuperhumanCellViewModelProtocol factory
     private let superhumanCellViewModelDesigner: SuperhumanCellViewModelDesigner
 
     /// Interactor instance
-    var interactor: SuperhumanInteractorInput?
+    private var interactor: SuperhumanInteractorInput?
 
     /// Router instance
     var router: SuperhumanRouterInput?
@@ -38,8 +41,9 @@ final public class SuperhumanPresenter {
         superhumanCellViewModelDesigner: SuperhumanCellViewModelDesigner,
         superhumanViewInput: SuperhumanViewInput
     ) {
-        self.superhumanCellViewModelDesigner = superhumanCellViewModelDesigner
         self.view = superhumanViewInput
+        self.contentManager = SuperhumanContentManagerImplementation(tableView: (view as! SuperhumanViewController).tableView, controllerFactory: SuperhumanCellControllerFactoryImplementation())
+        self.superhumanCellViewModelDesigner = superhumanCellViewModelDesigner
         self.interactor = SuperhumanInteractor(superhumanService: SuperumanServiceImplementation(), superhumanPresenter: self)
     }
 }
@@ -68,7 +72,7 @@ extension SuperhumanPresenter: SuperhumanInteractorOutput {
 
     public func obtainSuperhumansSuccess(_ codes: [SuperhumanPlainObject]) {
         let viewModels = superhumanCellViewModelDesigner.viewModels(from: codes)
-        view?.update(viewModels)
+        contentManager?.updateData(viewModels)
     }
 }
 

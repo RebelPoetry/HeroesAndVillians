@@ -6,18 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - SuperhumanViewInput
 
 public protocol SuperhumanViewInput: AnyObject {
+    
+    /// Table view instantce
+    var tableView: UITableView { get }
 
     /// Setup initial view state
     func setupInitialState()
-
-    /// Update data
-    ///
-    /// - Parameter viewModels: new data for UITableView instance
-    func update(_ viewModels: [SuperhumanCellViewModelProtocol])
 
     /// Select some superhuman
     /// - Parameter superhuman: some superhuman

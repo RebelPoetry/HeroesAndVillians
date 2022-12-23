@@ -14,9 +14,6 @@ public final class SuperhumanViewController: UIViewController {
     
     /// Presenter instance
     var output: SuperhumanViewOutput?
-
-    /// Superhuman content manager
-    var contentManager: SuperhumanContentManager?
     
     /// Name label of superhumans list
     private let listNameLabel = UILabel()
@@ -30,13 +27,12 @@ public final class SuperhumanViewController: UIViewController {
     }()
     
     /// Table view with superhuman cards
-    private var tableView = UITableView()
+    public var tableView = UITableView()
 
     // MARK: - ViewController
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        contentManager = SuperhumanContentManagerImplementation(tableView: tableView, controllerFactory: SuperhumanCellControllerFactoryImplementation())
         output = SuperhumanPresenter(
             superhumanCellViewModelDesigner: SuperhumanCellViewModelDesignerImplementation(),
             superhumanViewInput: self
@@ -55,7 +51,6 @@ extension SuperhumanViewController {
     private func setupTableView() {
         view.addSubview(tableView)
         layoutTable()
-        contentManager?.configure(withContentView: tableView)
     }
 }
 
@@ -81,16 +76,12 @@ extension SuperhumanViewController {
 
 // MARK: - SuperhumanViewInput
 
-extension SuperhumanViewController: SuperhumanViewInput {
+extension SuperhumanViewController: SuperhumanViewInput {    
     
     public func setupInitialState() {
         setupTableView()
         setListNameLabel()
         setFavoriteButton()
-    }
-    
-    public func update(_ viewModels: [SuperhumanCellViewModelProtocol]) {
-        contentManager?.updateData(viewModels)
     }
     
     public func selectSuperhuman(_ superhuman: SuperhumanPlainObject) {
