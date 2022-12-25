@@ -11,9 +11,6 @@ import UIKit
 // MARK: - SuperhumanViewInput
 
 public protocol SuperhumanViewInput: AnyObject {
-    
-    /// Table view instantce
-    var tableView: UITableView { get }
 
     /// Setup initial view state
     func setupInitialState()
