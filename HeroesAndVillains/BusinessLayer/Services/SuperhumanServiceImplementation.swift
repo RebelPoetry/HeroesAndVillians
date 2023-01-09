@@ -8,14 +8,14 @@
 import Foundation
 import ServiceCore
 
-// MARK: - SuperumanServiceImplementation
+// MARK: - SuperhumanServiceImplementation
 
-public final class SuperumanServiceImplementation: Service {
+public final class SuperhumanServiceImplementation: Service {
 }
 
 // MARK: - SuperhumanService
 
-extension SuperumanServiceImplementation: SuperhumanService {
+extension SuperhumanServiceImplementation: SuperhumanService {
     
     public func obtain() -> ServiceCall<[SuperhumanPlainObject]> {
         createCall {

@@ -15,7 +15,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = SuperhumanViewController()
+        
+        let assemblyCollector = HeroesAndVillainsAssembliesCollector()
+        assemblyCollector.collect()
+
+        window.rootViewController = SuperhumanListModule.instantiate()
+        
         self.window = window
         window.makeKeyAndVisible()
     }
