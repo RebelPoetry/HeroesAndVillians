@@ -39,12 +39,14 @@ final public class SuperhumanPresenter {
     /// - Parameter SuperhumanCellViewModelDesigner: SuperhumanCellViewModelProtocol factory
     public init(
         superhumanCellViewModelDesigner: SuperhumanCellViewModelDesigner,
-        superhumanViewInput: SuperhumanViewInput
+        view: SuperhumanViewInput,
+        contentManager: SuperhumanContentManager,
+        interactor: SuperhumanInteractor
     ) {
-        self.view = superhumanViewInput
-        self.contentManager = SuperhumanContentManagerImplementation(tableView: (view as! SuperhumanViewController).tableView, controllerFactory: SuperhumanCellControllerFactoryImplementation())
+        self.view = view
+        self.contentManager = contentManager
         self.superhumanCellViewModelDesigner = superhumanCellViewModelDesigner
-        self.interactor = SuperhumanInteractor(superhumanService: SuperumanServiceImplementation(), superhumanPresenter: self)
+        self.interactor = interactor
     }
 }
 

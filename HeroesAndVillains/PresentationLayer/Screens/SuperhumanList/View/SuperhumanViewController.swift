@@ -33,10 +33,6 @@ public final class SuperhumanViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        output = SuperhumanPresenter(
-            superhumanCellViewModelDesigner: SuperhumanCellViewModelDesignerImplementation(),
-            superhumanViewInput: self
-        )
         design()
         localize()
         output?.didTriggerViewReadyEvent()

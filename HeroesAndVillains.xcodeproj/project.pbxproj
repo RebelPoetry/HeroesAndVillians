@@ -19,7 +19,6 @@
 		C08F53B4291200EF00A2F750 /* SuperhumanStatPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F53B3291200EF00A2F750 /* SuperhumanStatPlainObject.swift */; };
 		C08F53B929127AE700A2F750 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F53B829127AE700A2F750 /* StatView.swift */; };
 		C0B6A9F22923A98300473B47 /* SuperhumanPlainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F12923A98300473B47 /* SuperhumanPlainObject.swift */; };
-		C0B6A9F42923AAA900473B47 /* SuperumanServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F32923AAA900473B47 /* SuperumanServiceImplementation.swift */; };
 		C0B6A9F82923AB0E00473B47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6A9F72923AB0E00473B47 /* Data.swift */; };
 		C0B6AA03292577D700473B47 /* SuperhumanCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA02292577D700473B47 /* SuperhumanCellViewModelProtocol.swift */; };
 		C0B6AA052925810600473B47 /* SuperhumanCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA042925810600473B47 /* SuperhumanCellViewModel.swift */; };
@@ -28,8 +27,6 @@
 		C0B6AA0B2926051400473B47 /* SuperhumanCellControllerFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA0A2926051400473B47 /* SuperhumanCellControllerFactoryImplementation.swift */; };
 		C0B6AA0D2926099100473B47 /* SuperhumanContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA0C2926099100473B47 /* SuperhumanContentManager.swift */; };
 		C0B6AA0F292D609000473B47 /* SuperhumanContentManagerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA0E292D609000473B47 /* SuperhumanContentManagerImplementation.swift */; };
-		C0B6AA15292F530800473B47 /* SuperhumanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA14292F530800473B47 /* SuperhumanRouter.swift */; };
-		C0B6AA17292F534E00473B47 /* SuperhumanRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA16292F534E00473B47 /* SuperhumanRouterInput.swift */; };
 		C0B6AA19292F543F00473B47 /* SuperhumanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA18292F543F00473B47 /* SuperhumanInteractor.swift */; };
 		C0B6AA1B292F547200473B47 /* SuperhumanInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA1A292F547200473B47 /* SuperhumanInteractorInput.swift */; };
 		C0B6AA1D292F54AB00473B47 /* SuperhumanInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA1C292F54AB00473B47 /* SuperhumanInteractorOutput.swift */; };
@@ -43,6 +40,16 @@
 		C0B6AA332930307400473B47 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA322930307400473B47 /* View.swift */; };
 		C0B6AA352930A2D500473B47 /* SuperhumanCellAppereance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6AA342930A2D500473B47 /* SuperhumanCellAppereance.swift */; };
 		C0BE8E1729366D4300F36783 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8E1629366D4300F36783 /* UIColor.swift */; };
+		C0C40EB6296B797E00F48581 /* AssebliesHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EB2296B797E00F48581 /* AssebliesHolder.swift */; };
+		C0C40EB7296B797E00F48581 /* HeroesAndVillainsAssembliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EB3296B797E00F48581 /* HeroesAndVillainsAssembliesCollector.swift */; };
+		C0C40EB8296B797E00F48581 /* AssambliesCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EB4296B797E00F48581 /* AssambliesCollector.swift */; };
+		C0C40EB9296B797E00F48581 /* CollactableAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EB5296B797E00F48581 /* CollactableAssembly.swift */; };
+		C0C40EBB296B79D900F48581 /* SuperhumanServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EBA296B79D900F48581 /* SuperhumanServiceImplementation.swift */; };
+		C0C40EBD296B7A6E00F48581 /* SuperhumanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EBC296B7A6E00F48581 /* SuperhumanRouter.swift */; };
+		C0C40EBF296B7A8D00F48581 /* SuperhumanRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EBE296B7A8D00F48581 /* SuperhumanRouterInput.swift */; };
+		C0C40EC2296B7BC400F48581 /* SuperhumanListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EC1296B7BC400F48581 /* SuperhumanListAssembly.swift */; };
+		C0C40EC8296B7E3700F48581 /* SuperhumanListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40EC7296B7E3700F48581 /* SuperhumanListModule.swift */; };
+		C0C40ECC296C52C400F48581 /* SuperhumanServiceLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C40ECB296C52C400F48581 /* SuperhumanServiceLayerAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +68,6 @@
 		C08F53B3291200EF00A2F750 /* SuperhumanStatPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanStatPlainObject.swift; sourceTree = "<group>"; };
 		C08F53B829127AE700A2F750 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		C0B6A9F12923A98300473B47 /* SuperhumanPlainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanPlainObject.swift; sourceTree = "<group>"; };
-		C0B6A9F32923AAA900473B47 /* SuperumanServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperumanServiceImplementation.swift; sourceTree = "<group>"; };
 		C0B6A9F72923AB0E00473B47 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C0B6AA02292577D700473B47 /* SuperhumanCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellViewModelProtocol.swift; sourceTree = "<group>"; };
 		C0B6AA042925810600473B47 /* SuperhumanCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellViewModel.swift; sourceTree = "<group>"; };
@@ -70,8 +76,6 @@
 		C0B6AA0A2926051400473B47 /* SuperhumanCellControllerFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellControllerFactoryImplementation.swift; sourceTree = "<group>"; };
 		C0B6AA0C2926099100473B47 /* SuperhumanContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanContentManager.swift; sourceTree = "<group>"; };
 		C0B6AA0E292D609000473B47 /* SuperhumanContentManagerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanContentManagerImplementation.swift; sourceTree = "<group>"; };
-		C0B6AA14292F530800473B47 /* SuperhumanRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanRouter.swift; sourceTree = "<group>"; };
-		C0B6AA16292F534E00473B47 /* SuperhumanRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanRouterInput.swift; sourceTree = "<group>"; };
 		C0B6AA18292F543F00473B47 /* SuperhumanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanInteractor.swift; sourceTree = "<group>"; };
 		C0B6AA1A292F547200473B47 /* SuperhumanInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanInteractorInput.swift; sourceTree = "<group>"; };
 		C0B6AA1C292F54AB00473B47 /* SuperhumanInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanInteractorOutput.swift; sourceTree = "<group>"; };
@@ -85,6 +89,16 @@
 		C0B6AA322930307400473B47 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		C0B6AA342930A2D500473B47 /* SuperhumanCellAppereance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanCellAppereance.swift; sourceTree = "<group>"; };
 		C0BE8E1629366D4300F36783 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C0C40EB2296B797E00F48581 /* AssebliesHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssebliesHolder.swift; sourceTree = "<group>"; };
+		C0C40EB3296B797E00F48581 /* HeroesAndVillainsAssembliesCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesAndVillainsAssembliesCollector.swift; sourceTree = "<group>"; };
+		C0C40EB4296B797E00F48581 /* AssambliesCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssambliesCollector.swift; sourceTree = "<group>"; };
+		C0C40EB5296B797E00F48581 /* CollactableAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollactableAssembly.swift; sourceTree = "<group>"; };
+		C0C40EBA296B79D900F48581 /* SuperhumanServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanServiceImplementation.swift; sourceTree = "<group>"; };
+		C0C40EBC296B7A6E00F48581 /* SuperhumanRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperhumanRouter.swift; path = HeroesAndVillains/BusinessLayer/Services/SuperhumanRouter.swift; sourceTree = SOURCE_ROOT; };
+		C0C40EBE296B7A8D00F48581 /* SuperhumanRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperhumanRouterInput.swift; path = HeroesAndVillains/BusinessLayer/Services/SuperhumanRouterInput.swift; sourceTree = SOURCE_ROOT; };
+		C0C40EC1296B7BC400F48581 /* SuperhumanListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanListAssembly.swift; sourceTree = "<group>"; };
+		C0C40EC7296B7E3700F48581 /* SuperhumanListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanListModule.swift; sourceTree = "<group>"; };
+		C0C40ECB296C52C400F48581 /* SuperhumanServiceLayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperhumanServiceLayerAssembly.swift; sourceTree = "<group>"; };
 		D90D1A7F3C0DC6B8969D049F /* Pods_HeroesAndVillains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroesAndVillains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +126,7 @@
 		C0094FCD29239CC700D479AF /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C0C40ECA296C529E00F48581 /* Assembly */,
 				C0094FCE29239CE700D479AF /* Services */,
 			);
 			path = BusinessLayer;
@@ -121,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C0094FCF29239CFE00D479AF /* SuperhumanService.swift */,
-				C0B6A9F32923AAA900473B47 /* SuperumanServiceImplementation.swift */,
+				C0C40EBA296B79D900F48581 /* SuperhumanServiceImplementation.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -147,6 +162,7 @@
 		C041AC5728EC8A500065C85C /* HeroesAndVillains */ = {
 			isa = PBXGroup;
 			children = (
+				C0C40EB0296B797E00F48581 /* CoreLayer */,
 				C0B6A9F92923D97C00473B47 /* Resources */,
 				C0094FCD29239CC700D479AF /* BusinessLayer */,
 				C08F53B529126B8500A2F750 /* Application */,
@@ -188,6 +204,8 @@
 		C062CDAC28F2ED1600217E8B /* SuperhumanList */ = {
 			isa = PBXGroup;
 			children = (
+				C0C40EC9296B804F00F48581 /* Module */,
+				C0C40EC0296B7BAA00F48581 /* Assembly */,
 				C0B6AA10292F514D00473B47 /* View */,
 				C0B6AA11292F515A00473B47 /* Interactor */,
 				C0B6AA13292F517300473B47 /* Presenter */,
@@ -273,8 +291,8 @@
 		C0B6AA12292F516900473B47 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				C0B6AA14292F530800473B47 /* SuperhumanRouter.swift */,
-				C0B6AA16292F534E00473B47 /* SuperhumanRouterInput.swift */,
+				C0C40EBC296B7A6E00F48581 /* SuperhumanRouter.swift */,
+				C0C40EBE296B7A8D00F48581 /* SuperhumanRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -344,6 +362,49 @@
 				C0B6AA02292577D700473B47 /* SuperhumanCellViewModelProtocol.swift */,
 			);
 			path = SuperhumanCellViewModel;
+			sourceTree = "<group>";
+		};
+		C0C40EB0296B797E00F48581 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C0C40EB1296B797E00F48581 /* Common */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		C0C40EB1296B797E00F48581 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C0C40EB2296B797E00F48581 /* AssebliesHolder.swift */,
+				C0C40EB3296B797E00F48581 /* HeroesAndVillainsAssembliesCollector.swift */,
+				C0C40EB4296B797E00F48581 /* AssambliesCollector.swift */,
+				C0C40EB5296B797E00F48581 /* CollactableAssembly.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C0C40EC0296B7BAA00F48581 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C0C40EC1296B7BC400F48581 /* SuperhumanListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		C0C40EC9296B804F00F48581 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C0C40EC7296B7E3700F48581 /* SuperhumanListModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C0C40ECA296C529E00F48581 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				C0C40ECB296C52C400F48581 /* SuperhumanServiceLayerAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		C6E7EF34675CB85AEA843699 /* Frameworks */ = {
@@ -469,32 +530,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B6A9F42923AAA900473B47 /* SuperumanServiceImplementation.swift in Sources */,
+				C0C40EBD296B7A6E00F48581 /* SuperhumanRouter.swift in Sources */,
 				C0B6AA052925810600473B47 /* SuperhumanCellViewModel.swift in Sources */,
+				C0C40EC2296B7BC400F48581 /* SuperhumanListAssembly.swift in Sources */,
 				C0B6AA092925EE5D00473B47 /* SuperhumanCellControllerFactory.swift in Sources */,
 				C0B6AA1F292F58FA00473B47 /* SuperhumanModuleOutput.swift in Sources */,
-				C0B6AA17292F534E00473B47 /* SuperhumanRouterInput.swift in Sources */,
 				C062CDAE28F2ED5000217E8B /* SuperhumanViewController.swift in Sources */,
 				C0B6AA2F292F6C8100473B47 /* SuperhumanViewInput.swift in Sources */,
 				C0BE8E1729366D4300F36783 /* UIColor.swift in Sources */,
+				C0C40EBB296B79D900F48581 /* SuperhumanServiceImplementation.swift in Sources */,
 				C0B6AA03292577D700473B47 /* SuperhumanCellViewModelProtocol.swift in Sources */,
-				C0B6AA15292F530800473B47 /* SuperhumanRouter.swift in Sources */,
 				C062CDAB28F2E9E700217E8B /* SuperhumanCell.swift in Sources */,
 				C0B6A9F82923AB0E00473B47 /* Data.swift in Sources */,
+				C0C40EB6296B797E00F48581 /* AssebliesHolder.swift in Sources */,
 				C0B6AA0B2926051400473B47 /* SuperhumanCellControllerFactoryImplementation.swift in Sources */,
+				C0C40EB9296B797E00F48581 /* CollactableAssembly.swift in Sources */,
 				C0094FD029239CFE00D479AF /* SuperhumanService.swift in Sources */,
+				C0C40EBF296B7A8D00F48581 /* SuperhumanRouterInput.swift in Sources */,
+				C0C40ECC296C52C400F48581 /* SuperhumanServiceLayerAssembly.swift in Sources */,
 				C08F53B929127AE700A2F750 /* StatView.swift in Sources */,
 				C0B6AA0D2926099100473B47 /* SuperhumanContentManager.swift in Sources */,
 				C0B6AA24292F5A9300473B47 /* SuperhumanCellViewModelDesigner.swift in Sources */,
 				C0B6AA19292F543F00473B47 /* SuperhumanInteractor.swift in Sources */,
+				C0C40EB7296B797E00F48581 /* HeroesAndVillainsAssembliesCollector.swift in Sources */,
 				C08F53B4291200EF00A2F750 /* SuperhumanStatPlainObject.swift in Sources */,
 				C0B6AA26292F5B5D00473B47 /* SuperhumanCellViewModelDesignerImplementation.swift in Sources */,
 				C0B6AA0F292D609000473B47 /* SuperhumanContentManagerImplementation.swift in Sources */,
 				C0B6AA352930A2D500473B47 /* SuperhumanCellAppereance.swift in Sources */,
 				C0B6AA21292F5A0A00473B47 /* SuperhumanModuleInput.swift in Sources */,
 				C0B6AA1B292F547200473B47 /* SuperhumanInteractorInput.swift in Sources */,
+				C0C40EB8296B797E00F48581 /* AssambliesCollector.swift in Sources */,
 				C0B6AA31292F6CD000473B47 /* SuperhumanViewOutput.swift in Sources */,
 				C0B6A9F22923A98300473B47 /* SuperhumanPlainObject.swift in Sources */,
+				C0C40EC8296B7E3700F48581 /* SuperhumanListModule.swift in Sources */,
 				C041AC5928EC8A500065C85C /* AppDelegate.swift in Sources */,
 				C0B6AA28292F5C3B00473B47 /* SuperhumanPresenter.swift in Sources */,
 				C0B6AA332930307400473B47 /* View.swift in Sources */,
